@@ -1,0 +1,31 @@
+body {
+    background-color: #f9f9f9;
+    padding: 50px 50px 50px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 10px;
+    color: orange;
+}
+
+.homeworks {
+    width: 600px;
+    height: 100%;
+    line-height: 24px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: none;
+}

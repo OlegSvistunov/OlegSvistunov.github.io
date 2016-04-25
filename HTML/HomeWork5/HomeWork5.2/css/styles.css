@@ -1,0 +1,70 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);;
+}
+
+.canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    border: 8px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+}
+
+.half_width{
+    width: 50px;
+}
+
+.single_width{
+    width: 100px;
+}
+
+.onehalf_width{
+    width: 130px;
+}
+
+.quad_width{
+    width: 180px;
+}
+
+.single_height{
+    height: 25px;
+}
+
+.double_height{
+    height: 50px;
+}
+
+.quad_height{
+    height: 100px;
+}
+
+.color_red{
+    background-color: rgba(255, 0, 0, 0.6);;
+}
+
+.color_yellow{
+    background-color: rgba(255, 255, 0, 0.6);;
+}
+
+.color_black{
+    background-color: rgba(0, 0, 0, 0.6);;
+}
+
+.color_blue{
+    background-color: rgba(0, 0, 255, 0.6);;
+}

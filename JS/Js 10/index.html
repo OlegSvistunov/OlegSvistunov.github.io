@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HomeWork_JS_8 </title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/cusel.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="js/jquery.js" charset="utf-8"></script> -->
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <!-- <script src="js/jquery-migrate.min.js" charset="utf-8"></script> -->
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/cusel.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</head>
+<body>
+    <h1>Slide Down Menu</h1>
+    <nav class="main-menu">
+        <ul class="horizontal-menu clearfix">
+            <li><a href="#">Киево-Печерская лавра</a></li>
+            <li><a href="#">Почаевско-Успенская лавра</a></li>
+            <li class="dropdown">
+                <a href="#">Успенская Святогорская лавра</a>
+                <ul class="submenu">
+                    <li><a href="#">собор Успения Пресвятой Богородицы</a></li>
+                    <li><a href="#">церковь Покрова Пресвятой Богородицы</a></li>
+                    <li><a href="#">церковь святителя Николая Чудотворца</a></li>
+                    <li class="dropdown_1">
+                        <a href="#">пещерный храм</a>
+                        <ul class="submenu">
+                            <li><a href="#">Рождества Иоанна Предтечи</a></li>
+                            <li class="dropdown_2">
+                              <a href="#">часовни</a>
+                              <ul class="submenu">
+                                  <li><a href="#">апостола Андрея Первозванного</a></li>
+                                  <li><a href="#">преподобных Арсения и Германа </a></li>
+                                  <li><a href="#">преподобных отцов Киево-Печерских </a></li>
+                                  <li><a href="#">надкладезная</a></li>
+                              </ul>
+                            <li><a href="#">преподобного Алексия, человека Божия</a></li>
+                            <li><a href="#">преподобных Антония и Феодосия Печерских</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#">Nav 3.5</a></li> -->
+                    <!-- <li><a href="#">Nav 3.6</a></li> -->
+                </ul>
+            </li>
+            <!-- <li><a href="#">Троице-Сергиева лавра</a></li> -->
+            <!-- <li><a href="#">Александро-Невская лавра</a></li> -->
+        </ul>
+    </nav>
+    <br>
+    <h1>Carousel</h1>
+    <div class="car-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/church1.jpg"  width="640" height="480" alt=""></li>
+                <li><img src="img/church2.jpg"  width="640" height="480" alt=""></li>
+                <li><img src="img/church3.jpg"  width="640" height="480" alt=""></li>
+                <li><img src="img/church4.jpg"  width="640" height="480" alt=""></li>
+            </ul>
+        </div>
+
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+        <p class="jcarousel-pagination"></p>
+        <a href="#" class="jcarousel-random">Random</a>
+    </div>
+
+    <h1>Select</h1>
+    <div class="sel-wrapper">
+        <select id="church" name="church">
+            <!-- <option selected="selected">Выберите..</option> -->
+						<option value="Пункт 1">Выберите цель посещения</option>
+            <option value="Пункт 2">Лавра</option>
+            <option value="Пункт 3">Монастырь</option>
+            <option value="Пункт 4">Храм</option>
+            <option value="Пункт 5">Часовня</option>
+            <option value="Пункт 6">Скит</option>
+
+        </select>
+    </div>
+
+    <h1>Checkbox</h1>
+    <div class="cb-wrapper">
+        <div class="customCheckBox"><label for="ch1">Молебен</label>
+					<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+				</div>
+        <div class="customCheckBox"><label for="ch2">Сорокоуст</label>
+					<input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+				</div>
+        <div class="customCheckBox"><label for="ch3">Литургия</label>
+					<input type="checkbox" class="niceCheck" id="ch3" disabled="disabled" />
+				</div>
+        <div class="customCheckBox-css"><input type="checkbox" id="check-css1" class="check-css"/>
+					<label for="check-css1">Молебен (css)</label>
+				</div>
+        <div class="customCheckBox-css"><input type="checkbox" id="check-css2" class="check-css" checked="checked"/>
+					<label for="check-css2">Сорокоуст (css)</label>
+				</div>
+        <div class="customCheckBox-css"><input type="checkbox" id="check-css3" class="check-css" disabled="disabled"/>
+					<label for="check-css3">Литургия (css)</label>
+				</div>
+    </div>
+</body>
+</html>
