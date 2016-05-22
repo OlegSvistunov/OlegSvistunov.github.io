@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HomeWork_JS_23 </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/app" src="js/require.js"></script>
+</head>
+
+<body>
+
+   <script type="text/template" id="wrapper-template">
+
+       <div class="wrapper">
+           <ul class="toDo__item-list">
+           </ul>
+           <div class="toDo__controls">
+               <input type="text" class="toDo__item-value" data-value="">
+               <button class="toDo__item-add">Add</button>
+               <button class="toDo__item-btn-edit">Update</button>
+           </div>
+       </div>
+
+
+    </script>
+
+    <script type="text/template" id="list-template">
+        <% for(var i = 0; i < data.length; i++) { %>
+           <li class="toDo__item"><%= data[i]%>   &nbsp;
+              <span data-value="<%=i%>" class="toDo__item-edit">
+                <img src="img/edit.png" alt="edit"/>
+              </span>   &nbsp;
+              <span data-value="<%=i%>" class="toDo__item-delete">
+                <img src="img/delete.png" alt="delete"/>
+              </span>
+           </li>
+        <% } %>
+    </script>
+
+</body>
+</html>
